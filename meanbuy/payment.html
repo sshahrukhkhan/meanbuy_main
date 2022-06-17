@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/payment.css">
+    </head>
+    <body>
+        <div class="Top_container">
+            <div id="top_box">
+               <div id="top_para"><p>Free Shipping above ₹599</p></div>
+               <div>
+                   <img id="left_logo"
+                   src = "https://meanbuyassets.s3.ap-south-1.amazonaws.com/baselogo.png"
+                   />
+               </div>
+               <div id="right_txt">
+                <p>LOGIN / SIGN UP</p>
+                <b>WELCOME GUEST</b>
+               </div>
+            </div>  
+        </div>
+
+        <div class="Mid_container">
+            <div id="mid_top_txt">
+                <b>Your Email & Phone Number</b>
+                <p>For full account access please Login or Sign Up</p>
+            </div>
+
+            <div>
+                <p>Email Address</p>
+                <input type="text" id="input_box" placeholder="Email Address"/>
+                 <p>Password</p>
+              <input type="text" id="input_box" placeholder="Phone Number"/>            
+            </div>
+
+            <div id="check_box">
+                <input type="checkbox"/>I agree to be contacted through Whatsapp for Order Updates              
+            </div>
+            <div class="promoBox">
+                <p style="font-weight: 15px;margin-left: 10px">Subtotal:</p>
+                <p style="color: orange; margin-left: 10px">Free Shipping</p>
+                <p  style="font-weight: 25px;margin-left: 10px ">Total:</p>
+                <hr>
+                <p style="margin-left: 10px">Get up to 500.00 OFF on your First Time Prepaid <br> Order(COD Excluded)with <b style="color:orange">PREPAID</b></p>
+                <p style="margin-left: 10px">Got Promotional Code? Use Below</p>
+                <input type="text" id="promo_input" placeholder="Promtional Code"/>
+                <button style="width: 110px;height: 40px; background-color: orange;">APPLY CODE</button>
+
+
+            </div>
+
+
+            <div class="shipping_box">
+                <b>Shipping Details</b>
+                <p style="color:red">The "Name" field is required</p>
+                <p style="color:red">The "Address 1" fied is required</p>
+                <form>
+                <p>Name</p>
+                <input type="text" id="input_box" placeholder="Name"/>
+            </div id="left_add_box">
+            <p>Address 1</p>
+            <input type="text" id="address_box1" placeholder="Address 1"/>
+            <p>State</p>
+            <select name="state" id="state" class="form-control">
+                <option value="Select State">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                </select>
+            
+
+            <p>Country</p>
+            <input type="text" id="address_box1" placeholder="Country"/>
+
+            <div>
+             
+            <div id="right_add_box">
+            <p id="p_add">Address 2</p>
+            <input type="text" id="address_box2" placeholder="Address 2"/>
+            <p id="p_add">City</p>
+            <input type="text" id="address_box2" placeholder="City"/>
+            <p id="p_add">Pin Code</p>
+            <input type="text" id="address_box2" placeholder="Pin Code"/>
+            </div>
+        </form>
+
+            <div class="billing_box">
+                <b>Billing Details</b>
+                <p><input onclick="hide_show()" type="checkbox" id="hide"/>Same as Shipping Address</p>
+
+            </div id="left_add_box">
+            <p>Address 1</p>
+            <input type="text" id="address_box1" placeholder="Address 1"/>
+            <p>State</p>
+            <select name="state" id="state" class="form-control">
+                <option value="Select State">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+                </select>
+            
+
+            <p>Country</p>
+            <input type="text" id="address_box1" placeholder="Country"/>
+
+            <div>
+             
+            <div id="right_add_box">
+            <p id="p_add">Address 2</p>
+            <input type="text" id="address_box2" placeholder="Address 2"/>
+            <p id="p_add">City</p>
+            <input type="text" id="address_box2" placeholder="City"/>
+            <p id="p_add">Pin Code</p>
+            <input type="text" id="address_box2" placeholder="Pin Code"/>
+            </div>
+            <div class="rightBOX_belowPromo">
+                <img id="left_logo"
+                src = "https://meanbuyassets.s3.ap-south-1.amazonaws.com/baselogo.png"
+                />
+                <br><br><div><p style="font-size: 25px;">Our Shop.Your Price.</p>
+                    <p>Online Shopping Redefined</p>
+                </div>
+                <div id="smallOrangeBox"></div>  
+            </div>
+            </div> 
+            </div>    
+            </div>
+        </div>
+        <div class="payment_box">
+            <b>Payment Details</b>
+            <div id="debitCard">
+                <img id="payImage"
+                src="https://e7.pngegg.com/pngimages/386/389/png-clipart-envelop-folder-credit-card-debit-card-cooperative-bank-computer-icons-credit-card-black-angle-text.png"
+                />
+                <b>Credit/Debit Card</b>
+                
+            </div>
+            <div id="netBanking">
+                <img id="payImage"
+                src="https://play-lh.googleusercontent.com/wII2M5CjYVwKJqVgPyx7FIPPrEq8doZnrjXn5_HoiyE_bN9nGEDoowGTelOsrwKVlkiA"
+                />
+                <b>Net Banking</b>
+
+            </div>
+            <div id="Emi">
+                <img id="payImage"
+                src="https://logos.textgiraffe.com/logos/logo-name/Emi-designstyle-candy-m.png"
+                />
+                <b>EMI</b>   
+            </div>
+            <div><p>We accept all major credit and debit cards of indian and international banks.</p></div>
+            <button onclick="mypay()" id="paynow" style="width: 600px; height: 40px; background-color: orange;">PAY NOW!</button>
+            
+    </body>
+    </html>
+    <script>
+        // function hide_show(){
+        //   var Hide = document.createElement("#hide")
+        //   Hide.style.display=None;
+        // }
+        // document.querySelector("#paynow").addEventListener("PAY NOW!",Func)
+        // function func(event){
+        //     event.preventDefault()
+        //     console.log(window.location.href=login.html);
+        // }
+        function mypay(){
+            
+            alert("Payment Successful");    
+            window.location.href ="meanbuy.html";
+    }
+        
+        
+    </script>

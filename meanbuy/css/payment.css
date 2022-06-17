@@ -1,0 +1,130 @@
+.Top_container{
+    width: 100%;
+    height: 30%;
+    border: 1px solid black;
+    background-color: white;
+   
+}
+#top_para{
+    margin-top: -10px;
+    margin-left: 400px;
+    /* background-color: beige; */
+}
+/* #top_box{
+
+} */
+#left_logo{
+    width: 160px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#right_txt{
+    margin-left: 80%;
+    font-size: 13px;
+    margin-top: -80px;
+}
+/* #mid_top_txt{
+
+} */
+#input_box{
+    width:450px;
+    height:20px;  
+    background: rgb(243, 220, 178); 
+    color: black; 
+}
+/* #check_box{
+    background-color: papayawhip;
+}
+ */
+ .shipping_box{
+     margin-top: -110px
+
+ }
+ #right_add_box{
+     width: 250px;
+     height: 300px;
+     margin-left: 235px;
+     margin-top: -225px;
+     /* border: 1px solid black; */
+  
+ }
+ #address_box1{
+    width:220px;
+    height:20px;  
+    background: rgb(243, 220, 178); 
+    color: black;        
+ }
+ #address_box2{
+    width:220px;
+    height:20px;  
+    background: rgb(243, 220, 178); 
+    color: black;    
+   
+ }
+ .promoBox{
+     width: 440px;
+     height: 290px;
+     border: 1px solid grey;
+     margin-left: 500px;
+     margin-top: -150px;
+
+ }
+
+    select{
+    background-color: rgb(243, 220, 178);
+    width: 230px;
+}
+.billing_box{
+    margin-top: -60px;
+}
+#promo_input{
+    width: 150px;
+    height: 30px;
+    color:black;
+     background-color: rgb(243, 220, 178);
+     margin-left: 10px;
+}
+.rightBOX_belowPromo{
+    width: 350px;
+    height: 250px;
+    /* border: 1px solid black; */
+    margin-left: 600px;
+    margin-top: -650px;
+}
+#smallOrangeBox{
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    /* border: 1px solid black; */
+    margin-left: 60px;
+}
+.payment_box{
+    margin-top: 240px;
+    /* border: 5px solid black; */
+}
+#debitCard{
+    width: 190px;
+    height: 110px;
+    border: 1px solid black;
+
+}
+#netBanking{
+    width: 190px;
+    height: 110px;
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-top: -112px;
+}
+#Emi{
+    width: 190px;
+    height: 110px;
+    border: 1px solid black;
+    margin-left: 400px;
+    margin-top: -112px;
+
+}
+#payImage{
+    width: 189px;
+    height: 85px;
+}

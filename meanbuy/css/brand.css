@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+#brandcont{
+
+ display:flex;
+ flex-wrap: wrap;
+}
+#brandcont>div{
+ margin: 20px;
+ width: 30%;
+ height: 100%;
+}
+#brandcont>div>p>a{
+ text-decoration: none;
+ color:rgb(83, 83, 231);
+}

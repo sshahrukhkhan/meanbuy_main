@@ -1,0 +1,542 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: gainsboro;
+}
+#container{
+    display: grid;
+    grid-template-columns:3fr 10fr;
+    grid-template-rows:1fr;
+    grid-gap: 1px;
+    margin: auto;
+    margin-top: 100px;
+}
+#container>div{
+   margin:10px;
+}
+#subcat{
+    background-color: white;
+    
+}
+#subcatchoselist{
+    padding: 20px;
+}
+#subcatchoselist>p>a{
+    text-decoration: none;
+}
+#tradingitem{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    /* grid-template-rows: repeat(3,400px); */
+    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+  
+    padding: 50px;
+    padding-bottom: 0px;
+}
+#tradingitem>div{
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    cursor: pointer;
+    
+}
+#tradingitem>div>div{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin-bottom: 0px;
+
+}
+#tradingitem>div>img{
+    width: 100%;
+    height: 280px;
+}
+
+	/* NAVIGATION BAR */
+	
+    #nav{
+        background-color:rgb(255,255,255);
+        border-bottom: 1px solid black;
+        width: 100%;
+        min-width: 300px;
+        height: 140px;
+        position: fixed;
+        top: 0;
+    }
+    #freeShiping{
+        text-align: center;
+        height: 15px;
+        line-height: 15px;
+        padding: 10px;
+        background-color: rgb(248, 231, 231);
+        margin: 0px;
+    }
+    #imglogsearch{
+        height: 50px;
+        margin: auto;
+        width: 95%;
+        display:flex;
+        justify-content:space-between;
+        padding: 5px;
+        /* background-color: greenyellow; */
+        align-items: center;
+
+    }
+    #imgcont{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        line-height: 100%;
+        margin: 0px  20px;
+
+    }
+    #imgtag >img{
+        height: 100%;
+        align-items: center;
+        width: 200px;
+        
+    }
+    #searchbox{
+        padding: 0 30px;
+        width: 100%;
+        display: flex;
+    }
+    #searchbox>input{
+        width: 300px;
+        /* padding: 2px; */
+       
+    }
+    #ch{
+        background-color: orange;
+        padding: 10px;
+    }
+    #cellercor{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    #cellercor>div>a{
+        text-decoration: none;
+        color: black;
+        margin: 0 2px;
+    }
+    #lastdiv{
+        display:flex;
+       margin: 0px 5px;
+
+    }
+    #lastdiv>div{
+        align-items: center;
+        line-height: 10px;
+    }
+    #lastdiv>div>span>a{
+        font-size: 13px;
+        text-decoration: none;
+        color: black;
+    }
+    h5{
+        margin: 4px 0px;
+    }
+    #carticon{
+        margin-right: 3px;
+        color: coral;
+    }
+    #carticon>span>button{
+        border: 0px;
+        background-color:none;
+    }
+    #navigation{
+        display: flex;
+        justify-content: space-around;
+        /* align-items: center;
+        line-height: 20pxs; */
+    }
+    #menucont{
+        display: flex;
+        margin: auto;
+
+    }
+    #rightmenu{
+        height: 40px;
+        align-items: left;
+    }
+   
+    #rightmenu>ul,  #categorymenu>ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        height: 36px;
+        line-height: 36px;
+        font-family: sans-serif, Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    #rightmenu>ul>li{
+        float:left;
+    }
+    #rightmenu>ul>li>a{
+        display: block;
+        padding: 0 20px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    #rightmenu>ul>li>a:hover{
+        font-size: 15px;
+    }
+   #categorymenu{
+       height: 40px;
+       padding: 0px 0px 0px 30px;
+   }
+   #categorymenu>ul>li{
+       float:right;
+       font-size: 15px;
+       padding: 0 20px;
+   }
+   #categorymenu>ul>li>a{
+    color: rgb(0, 0, 0);
+        text-decoration: none;
+   }
+  
+
+/* ...................................... */
+.dropbtn {
+padding: 10px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+align-items: center;
+width: 200px;
+}
+
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+margin: 10px;
+
+min-width: 160px;
+overflow: auto;
+border: 1px solid black;
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/* .................................. */
+
+
+/* small screen */
+@media only screen and (min-width:0px) and (max-width:420px)
+{
+    #container{
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+} 
+
+    #tradingitem{
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: repeat(3,350px);
+    }
+
+    #subcat{
+        display: none;
+    }
+}
+/* medum screen */
+
+@media only screen and (min-width:421px) and (max-width:720px)
+{
+
+    #container{
+    grid-template-columns:1fr;
+    grid-template-rows:1fr;
+}            
+    #tradingitem{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(1fr,350px);
+    }
+    #subcat{
+        display: none;
+    }
+
+}
+
+
+
+
+/* NEW MEDIA QUIREY ONLY FOR NAVIGATION BAR */
+     /* media media media */
+
+        /* small screen */
+    
+        #nav{
+            background-color:rgb(255,255,255);
+            border-bottom: 1px solid black;
+            width: 100%;
+            min-width: 300px;
+            height: 140px;
+            position: fixed;
+        top: 0;
+        }
+        #freeShiping{
+            text-align: center;
+            height: 15px;
+            line-height: 15px;
+            padding: 10px;
+            background-color: rgb(248, 231, 231);
+            margin: 0px;
+        }
+        #imglogsearch{
+            height: 50px;
+            margin: auto;
+            width: 95%;
+            display:flex;
+            justify-content:space-between;
+            padding: 5px;
+            /* background-color: greenyellow; */
+            align-items: center;
+
+        }
+        #imgcont{
+            display: flex;
+            height: 100%;
+            align-items: center;
+            line-height: 100%;
+            margin: 0px  20px;
+
+        }
+        #imgtag >img{
+            height: 100%;
+            align-items: center;
+            width: 200px;
+            
+        }
+        #searchbox{
+            padding: 0 30px;
+            width: 100%;
+            display: flex;
+        }
+        #searchbox>input{
+            width: 300px;
+            /* padding: 2px; */
+           
+        }
+        #ch{
+            background-color: orange;
+            padding: 10px;
+        }
+        #cellercor{
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 12px;
+        }
+        #cellercor>div>a{
+            text-decoration: none;
+            color: black;
+            margin: 0 2px;
+        }
+        #lastdiv{
+            display:flex;
+           margin: 0px 5px;
+
+        }
+        #lastdiv>div{
+            align-items: center;
+            line-height: 10px;
+        }
+        #lastdiv>div>span>a{
+            font-size: 13px;
+            text-decoration: none;
+            color: black;
+        }
+        h5{
+            margin: 4px 0px;
+        }
+        #carticon{
+            margin-right: 3px;
+            color: coral;
+        }
+        #carticon>span>button{
+            border: 0px;
+            background-color:none;
+        }
+        #navigation{
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center;
+            line-height: 20pxs; */
+        }
+        #menucont{
+            display: flex;
+            margin: auto;
+
+        }
+        #rightmenu{
+            height: 40px;
+        }
+       
+        #rightmenu>ul,  #categorymenu>ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 36px;
+            line-height: 36px;
+            font-family: sans-serif, Arial, Helvetica, sans-serif;
+            font-size: 13px;
+        }
+        #rightmenu>ul>li{
+            float:right;
+        }
+        #rightmenu>ul>li>a{
+            display: block;
+            padding: 0 20px;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        #rightmenu>ul>li>a:hover{
+            font-size: 15px;
+        }
+       #categorymenu{
+           height: 40px;
+           padding: 0px 0px 0px 30px;
+       }
+       #categorymenu>ul>li{
+           float:right;
+           font-size: 15px;
+           padding: 0 20px;
+       }
+       #categorymenu>ul>li>a{
+        color: rgb(0, 0, 0);
+            text-decoration: none;
+       }
+      
+
+/* ...................................... */
+.dropbtn {
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  width: 200px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin: 10px;
+
+  min-width: 160px;
+  overflow: auto;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/* .................................. */
+
+
+
+
+
+
+
+       /* media media media */
+
+        /* small screen */
+       @media only screen and (min-width:0px) and (max-width:380px)
+{
+ 
+    #hid{
+    display: none;
+    }
+    #rightmenu{
+        display: none;
+    }
+    #searchbox{
+    display: none;
+    }
+
+    #imgtag >img{
+            height: 100%;
+            align-items:flex-start;
+            width: 100%;
+            
+        }
+}
+
+/* SMALL LARGE SCREEN */
+       @media only screen and (min-width:380px) and (max-width:491px)
+{
+ 
+    #hid{
+    display: none;
+    }
+    #m3,#m2,#m1{
+        display: none;
+    }
+    #searchbox{
+    display: none;
+}
+
+
+}
+/* medum screen */
+
+@media only screen and (min-width:490px) and (max-width:699px)
+{
+
+    #hid{
+    display: none;
+}
+#m3{
+    display: none;
+}
+
+#searchbox{
+    display: none;
+}
+#m2{
+    display: none;
+}
+
+
+
+}
+/* medum LARGE */
+
+@media only screen and (min-width:700px) and (max-width:900px)
+{
+#hid{
+    display: none;
+}
+
+}

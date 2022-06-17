@@ -1,0 +1,35 @@
+#container {
+    /* border: 1px solid green; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  #leftbox {
+    /* border: 1px solid orange; */
+    width: 60%;
+    margin: 20px;
+  }
+  #rightbox {
+    width: 30%;
+    border: 1px solid blue;
+    margin: 20px;
+  }
+  #logindiv {
+    text-align: center;
+    margin: center;
+  }
+  #logindiv>div:hover{
+      padding: 0;
+  }
+ 
+  img {
+    width: 80px;
+  }
+  input {
+    padding: 1.8%;
+    color: blue;
+    width: 95.8%;
+    /* background-color: rgb(37, 28, 10); */
+    /* box-shadow: whitesmoke 0px 5px 15px ; */
+  }

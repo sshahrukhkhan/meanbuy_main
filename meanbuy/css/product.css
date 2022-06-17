@@ -1,0 +1,102 @@
+#maindiv{
+    width: 90%;
+    height: 700px;
+    /* border: 1px solid grey; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    width: 15%;
+    height:40px;
+    background-color: orangered;
+    margin-left: 2%;
+    margin-bottom: 0px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    font-size: 25px;
+}
+#subdiv1{
+   
+    width: 500px;
+    height: 400px;
+}
+#subdiv2{
+  
+    width: 500px;
+    height: 800px;
+    text-align: left;
+}
+h2{
+    color: rgb(31, 29, 29);
+}
+span{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+#prices{
+    display: flex;
+    justify-content: space-around;
+}
+#mainprice{
+    color: orange;
+}
+#stickoff{
+    text-decoration: line-through;
+}
+#offer{
+    color: green;
+}
+h4{
+    color: green;
+}
+button{
+    background-color: rgb(255, 166, 0);
+    color:black;
+    padding: 20px;
+    width: 50%;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-top: 6px;
+    font-family: sans-serif ;
+    font-weight: bolder;
+    
+}
+#subimages > img{
+   width: 150px;
+   height: 150px;
+   margin: 5px;
+}
+li{
+    font-family: sans-serif ;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+#maindiv {
+  flex-direction: column;
+}
+
+#subdiv2 {
+  margin-top: 5%;
+}
+#subimages{
+    display: none;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+#maindiv {
+  flex-direction: column;
+}
+
+#subdiv2 {
+  margin-top: 5%;
+}
+#subimages{
+    display: none;
+}
+}

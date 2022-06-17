@@ -1,0 +1,97 @@
+#maindiv{
+    width: 90%;
+    height: 700px;
+    /* border: 1px solid grey; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#subdiv1{
+   
+    width: 450px;
+    height: 450px;
+
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+}
+#subdiv2{
+  
+    width: 500px;
+    /* height: 800px; */
+    text-align: left;
+
+    
+}
+h2{
+    color: rgb(31, 29, 29);
+}
+span{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#mainprice{
+    color: orange;
+}
+#stickoff{
+    text-decoration: line-through;
+}
+#offer{
+    color: green;
+}
+h4{
+    color: green;
+}
+
+#subimages > img{
+   width: 150px;
+   height: 150px;
+   margin: 5px;
+}
+td{
+  border: 2px solid black;
+  padding: 6px;
+  font-family: sans-serif
+}
+button{
+    background-color: rgb(17, 17, 16);
+    color: white;
+    padding: 20px;
+    width: 50%;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 20px;
+    margin-top: 6px;
+    
+}
+@media only screen and (min-width: 481px) and (max-width: 1075px) {
+#maindiv {
+  flex-direction: column;
+}
+
+#subdiv2 {
+  margin-top: 5%;
+}
+#subdiv1{
+    margin-top: 200px;
+}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+#maindiv {
+  flex-direction: column;
+}
+
+#subdiv2 {
+  margin-top: 5%;
+}
+#subimages{
+    display: none;
+}
+#subdiv1{
+    margin-top: 200px;
+}
+}
